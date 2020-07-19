@@ -19,10 +19,10 @@ class KeyboardWrapperTests: XCTestCase {
 
     func testKeyboardStates() {
         let notificationNames = [
-            NSNotification.Name.UIKeyboardWillShow,
-            NSNotification.Name.UIKeyboardDidShow,
-            NSNotification.Name.UIKeyboardWillHide,
-            NSNotification.Name.UIKeyboardDidHide
+            UIResponder.keyboardWillShowNotification,
+            UIResponder.keyboardDidShowNotification,
+            UIResponder.keyboardWillHideNotification,
+            UIResponder.keyboardDidHideNotification
         ]
 
         for name in notificationNames {
